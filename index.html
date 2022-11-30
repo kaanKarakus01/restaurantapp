@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <!-- Header section -->
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="#" class="main-header__logo"><img src="img/logo.jpg" alt="logo"></a>
+        <nav class=" main-nav active">
+            <a href="#home" class="main-nav__item">Home</a>
+            <a href="#menu" class="main-nav__item">Yemekler</a>
+            <a href="#about" class="main-nav__item">Hakkımızda</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </header>
+    <!-- Search form -->
+
+    <form action="" id="search-form">
+        <input type="search" name="" id="searching" placeholder="Aramak için yazınız...">
+        <label for="searching" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <main>
+        <section class="home" id="home">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row row-slide">
+                                <div class="col-12 col-md-6">
+                                    <span>İtalya Mutfağının Efsanesi</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo quia
+                                        praesentium, natus
+                                        vitae laboriosam sed beatae facilis doloribus obcaecati maiores ut mollitia
+                                        consectetur
+                                        quaerat voluptatem ullam suscipit distinctio quae.</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <img src="img/home-img-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-slide">
+                                <div class="col-12 col-md-6">
+                                    <span>Sağlıklı mı Sağlıklı Lezzetli mi Lezzetli</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo quia
+                                        praesentium,
+                                        natus
+                                        vitae laboriosam sed beatae facilis doloribus obcaecati maiores ut mollitia
+                                        consectetur
+                                        quaerat voluptatem ullam suscipit distinctio quae.</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <img src="img/home-img-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row row-slide">
+                                <div class="col-12 col-md-6">
+                                    <span>Mis gibi kokusuyla Muhteşem Pizza</span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quo quia
+                                        praesentium,
+                                        natus
+                                        vitae laboriosam sed beatae facilis doloribus obcaecati maiores ut mollitia
+                                        consectetur
+                                        quaerat voluptatem ullam suscipit distinctio quae.</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <img src="img/home-img-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <span class="title">YEMEKLER</span>
+            <div class="container">
+                <div class="row dishes-row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="container">
+                                <div class="card-title">
+                                    <img src="img/dish-1.png" alt="">
+                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                    <h1>Lorem, ipsum dolor.</h1>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est?</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="container">
+                                <div class="card-title">
+                                    <img src="img/dish-2.png" alt="">
+                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                    <h1>Lorem, ipsum dolor.</h1>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est?</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="container">
+                                <div class="card-title">
+                                    <img src="img/dish-3.png" alt="">
+                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                    <h1>Lorem, ipsum dolor.</h1>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est?</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="container">
+                                <div class="card-title">
+                                    <img src="img/dish-4.png" alt="">
+                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                    <h1>Lorem, ipsum dolor.</h1>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est?</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="container">
+                                <div class="card-title">
+                                    <img src="img/dish-5.png" alt="">
+                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                    <h1>Lorem, ipsum dolor.</h1>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est?</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="container">
+                                <div class="card-title">
+                                    <img src="img/dish-6.png" alt="">
+                                    <i class="fa-sharp fa-solid fa-heart"></i>
+                                    <h1>Lorem, ipsum dolor.</h1>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star checked"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, est?</p>
+                                    <button class="btn btn-success">Sepete Ekle</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comment" id="comment">
+            <div class="container">
+                <div class="comment-title">
+                    <span>YORUMLAR</span>
+                </div>
+                <div class="row comments">
+                    <div class="card col-lg-5 col-12">
+                        <div class="card-body">
+                            <div class="comment-img">
+                                <img src="img/pic-1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <i class="fa-sharp fa-solid fa-quote-right"></i>
+                                <span>Developer Kaan</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt ex assumenda
+                                    architecto. Voluptatibus minima eveniet facere enim hic, impedit exercitationem
+                                    iusto.
+                                    Maxime eos natus sequi quae nulla porro magni!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-lg-5 col-md-12">
+                        <div class="card-body">
+                            <div class="comment-img">
+                                <img src="img/pic-2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <i class="fa-sharp fa-solid fa-quote-right"></i>
+                                <span>Developer Kaan</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt ex assumenda
+                                    architecto. Voluptatibus minima eveniet facere enim hic, impedit exercitationem
+                                    iusto.
+                                    Maxime eos natus sequi quae nulla porro magni!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row about__row">
+                    <div class="col-12 col-md-5">
+                        <span>Food Restorant</span>
+                        <h2>En sağlıklı ve lezzetlisi</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ratione voluptatibus ut
+                            esse aut consectetur nesciunt quia, reprehenderit mollitia saepe explicabo debitis,
+                            inventore illo quisquam veniam similique, ea porro perferendis!</p>
+                        <span class="contact_title">İletişim</span>
+                        <p>Tel no : 1232132133</p>
+                        <p>Email : admin@developer.com</p>
+                    </div>
+                    <div class="col-12 col-md-5 about-img">
+                        <img src="img/about-img.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <span>Adres</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi aspernatur illo! Ab sit provident
+                    corporis quibusdam illum corrupti voluptatibus? Consequatur sed soluta ipsa esse reprehenderit
+                    blanditiis exercitationem libero et?</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <span>Bulunduğu iller</span>
+                <ul>
+                    <li>Adana</li>
+                    <li>Mersin</li>
+                    <li>Hatay</li>
+                    <li>İstanbul</li>
+                    <li>Ankara</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <span>İletişim</span>
+                <ul>
+                    <li>Tel No :12321321</li>
+                    <li>Email :admin@developer.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="developer_about">
+            <span>Developed by kaan</span>
+
+        </div>
+    </footer>
+
+
+    <!-- loader -->
+    <div class="loading">
+        <div class="loading_gif">
+            <img src="img/loader.gif" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="path-to-the-script/splide-extension-intersection.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</body>
+
+</html>
